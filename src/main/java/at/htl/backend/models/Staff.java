@@ -5,9 +5,9 @@ public class Staff {
     private String firstName;
     private String lastName;
     private String telephone;
-    private Status status;
+    private String status;
 
-    public Staff(Long id, String firstName, String lastName, String telephone, Status status) {
+    public Staff(Long id, String firstName, String lastName, String telephone, String status) {
         setId(id);
         setFirstName(firstName);
         setLastName(lastName);
@@ -47,14 +47,14 @@ public class Staff {
         this.telephone = telephone;
     }
 
-    public Status getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(String status) {
         this.status = status;
     }
-    
+
     @Override
     public String toString() {
         return "Staff{" +

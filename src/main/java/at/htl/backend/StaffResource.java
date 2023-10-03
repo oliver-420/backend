@@ -1,7 +1,6 @@
 package at.htl.backend;
 
 import at.htl.backend.models.Staff;
-import at.htl.backend.models.Status;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 
@@ -12,9 +11,9 @@ import java.util.Objects;
 @Path("/staff")
 public class StaffResource {
     private List<Staff> staffList = new ArrayList<>();{
-        staffList.add(new Staff(1L, "Max", "Mustermann", "06601234567", Status.WORKING));
-        staffList.add(new Staff(2L, "Lena", "Musterfrau", "06601234567", Status.SICK));
-        staffList.add(new Staff(3L, "Linus", "Nestler", "06601234567", Status.AVAILABLE));
+        staffList.add(new Staff(1L, "Max", "Mustermann", "06601234567", "working"));
+        staffList.add(new Staff(2L, "Lena", "Musterfrau", "06601234567", "sick"));
+        staffList.add(new Staff(3L, "Linus", "Nestler", "06601234567", "availiable"));
     }
 
     @GET
