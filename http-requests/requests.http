@@ -1,0 +1,27 @@
+# curl -X GET http://localhost:8080/staff
+###
+
+GET http://localhost:8080/staff/all
+Accept: application/json
+
+###
+
+GET http://localhost:8080/staff/2
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/staff/add
+Content-Type: application/json
+
+{
+  "id": 4,
+  "firstName": "Bajtik",
+  "lastName": "Berg",
+  "telephone": "06608335241",
+  "status": "ACTIVE"
+}
+
+###
+
+DELETE http://localhost:8080/staff/delete/1
